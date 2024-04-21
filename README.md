@@ -1,41 +1,62 @@
 # nagios-server-configuration-guide-for-server-monitoring
-Authors (Autores)
-Author	Origin
-Emmanuel Gutiérrez	UniBarranquilla - IUB
-Alvin Henao	UniBarranquilla - IUB
-Abstract (Resumen)
+=================
+
+### Authors (Autores)
+
+| Author                | Origin                               |
+| --------------------- | ------------------------------------ |
+| Joshua Caffroni       | UniBarranquilla - IUB                |
+| Harry Lopez           | UniBarranquilla - IUB                |
+
+### Abstract (Resumen)
+
 Place text here
 
-Screenshots (Pantallazos)
+### Screenshots (Pantallazos)
+
 Place text here
 
-TOOLS TIC'S (Herramientas TIC'S)
+### TOOLS TIC'S (Herramientas TIC'S)
+
 Place text here
 
-Status (Estado del trabajo)
-Status	Description
-Study Status: Design Finalized	The study was finished
-Keyworks (Palabras claves)
-Server
-Nagios
-Ubuntu
-Monitoring
-Roadmap (Hoja de ruta)
- Pre-requisitos (Pre-Requisites)
- Instalación (Installation)
+### Status (Estado del trabajo)
 
-	Servidor (Server)
-		Item1
-		Item2
-		Item3 - plugins 
-	Clientes (Client)
-Usage (Por qué es importante usarlo)
+| Status            | Description                          |
+| ----------------- | ------------------------------------ |
+| <img src="https://img.shields.io/badge/Study%20Status-Design%20Finalized-brightgreen.svg" alt="Study Status: Design Finalized"> | The study was finished | 
+
+### Keyworks (Palabras claves)
+
+- `Server`
+- `Nagios`
+- `Ubuntu`
+- `Monitoring`
+
+### Roadmap (Hoja de ruta)
+
+	 Pre-requisitos (Pre-Requisites)
+	 Instalación (Installation)
+
+		Servidor (Server)
+			Item1
+			Item2
+			Item3 - plugins 
+		Clientes (Client)
+
+### Usage (Por qué es importante usarlo)
+
 Place text here
 
-FAQ (Preguntas y respuestas)
+### FAQ (Preguntas y respuestas)
+
 5 preguntas y respuestas
 
-Contacts (Contactos)
+### Contacts (Contactos)
+
 Place text here
 
-Acknowledgements (Agradecimientos)
+### Acknowledgements (Agradecimientos)
+
+
+
