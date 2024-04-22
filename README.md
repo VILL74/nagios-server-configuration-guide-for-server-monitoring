@@ -47,7 +47,7 @@ Place text here
 
 ### Usage (Por qué es importante usarlo)
 
-It's important to use Nagios because it provides real-time visibility into the status of critical systems and services, helping to ensure the availability, reliability, and optimal performance of IT infrastructure, By actively monitoring resources and detecting issues early, Nagios helps prevent unplanned outages and minimizes downtime, thereby improving productivity and user satisfaction.
+It's important to use Nagios because it provides real-time visibility into the status of important systems and services, helping to ensure the availability, reliability and optimal performance of the IT infrastructure, thanks to active monitoring of resources and detection of problems. Early on, Nagios helps prevent unplanned outages and helps minimize downtime, thereby improving productivity and user satisfaction.
 
 ### FAQ (Preguntas y respuestas)
 
