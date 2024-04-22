@@ -10,7 +10,7 @@
 
 ### Abstract (Resumen)
 
-Place text here
+In the current document we talk about Nagios which is an open source monitoring tool that is used to monitor IT infrastructures, including servers, networks, applications and services, thanks to this it allows system administrators to detect and actively resolve issues before they impact end users.
 
 ### Screenshots (Pantallazos)
 
@@ -46,7 +46,7 @@ Place text here
 
 ### Usage (Por qué es importante usarlo)
 
-Place text here
+It's important to use Nagios because it provides real-time visibility into the status of critical systems and services, helping to ensure the availability, reliability, and optimal performance of IT infrastructure, By actively monitoring resources and detecting issues early, Nagios helps prevent unplanned outages and minimizes downtime, thereby improving productivity and user satisfaction.
 
 ### FAQ (Preguntas y respuestas)
 
