@@ -42,6 +42,11 @@ In this document you can find how to configure a Nagios server to monitor server
 - `Nagios`
 - `Ubuntu`
 - `Monitoring`
+- `Plugins`
+- `Service`
+- `Firewall`
+- `Docker`
+- `NGINX`
 
 ### Roadmap (Hoja de ruta)
 
