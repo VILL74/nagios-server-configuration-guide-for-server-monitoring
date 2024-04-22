@@ -168,6 +168,35 @@ In the first part of the file you see a defined service, this is the client serv
 
 ![2 definir servicio](https://github.com/VILL74/nagios-server-configuration-guide-for-server-monitoring/assets/87573078/b88ed09b-26da-4cb8-865c-759b4b54558e)
 
+`3. On the client server`
+
+On the client server we go to the nrpe.cfg file, we open the file with the command nano /etc/nagios/nrpe.cfg
+
+-`photo of how to apply the commands`
+
+![1conectar servidor cliente](https://github.com/VILL74/nagios-server-configuration-guide-for-server-monitoring/assets/87573078/ede276de-12bc-4dae-8294-2dc252ebfc99)
+
+-`In this line we place the IP of our Nagios server after the comma`
+
+![conectar servidor cliente](https://github.com/VILL74/nagios-server-configuration-guide-for-server-monitoring/assets/87573078/cc57b7b3-3074-40fd-9bcd-c3f3111dfefd)
+
+-`we can find port 5666 of Nagios already defined` 
+
+![2 conectar servidor cliente](https://github.com/VILL74/nagios-server-configuration-guide-for-server-monitoring/assets/87573078/fe1ed57e-c550-4c1a-9ef0-15770b301748)
+
+
+-`restart client server and nagios` 
+
+`restart Nagios server`
+
+ sudo service nagios restart
+
+`restart client server`
+
+sudo /etc/init.d/nagios-nrpe-server restart
+
+Once this is done you must restart both servers.
+
 - **How do I define the nrpe commands so I can use them?**
 
 `1. go and edit commands.cfg file`
@@ -180,13 +209,19 @@ To locate ourselves in the commands.cfg file we go to the following path /usr/lo
 
 ![1commands](https://github.com/VILL74/nagios-server-configuration-guide-for-server-monitoring/assets/87573078/430facc2-316d-4286-be08-78c238cd3c20)
 
+`2.edit file`
 
-5 preguntas y respuestas
+At the last part of the file you are going to place the following line
+
+![definir nrpe comando solo](https://github.com/VILL74/nagios-server-configuration-guide-for-server-monitoring/assets/87573078/535a86eb-7c5d-4547-ba81-35ae2399220c)
 
 ### Contacts (Contactos)
 - `Joshua Caffroni`
+
 jcaffroni@unibarranquilla.edu.co
+
 - `Harry Lopez`
+  
 harrydlopez@unibarranquilla.edu.co
 
 ### Acknowledgements (Agradecimientos)
