@@ -15,8 +15,11 @@ In this document we talk about how to configure a Nagios server to monitor serve
 Place text here
 
 ### TOOLS TIC'S (Herramientas TIC'S)
+- `Virtual box`
+- `Ubuntu Server`
+- `WinScp`
+- `Putty`
 
-- `Server`
 
 ### Status (Estado del trabajo)
 
