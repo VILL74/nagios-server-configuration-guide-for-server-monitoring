@@ -65,7 +65,25 @@ It's important to use Nagios because it provides real-time visibility into the s
 
 ### FAQ (Preguntas y respuestas)
 
+- `Does a port have to be enabled for the Nagios server to serve?`
+  
+Yes, port 5666 must be enabled on the Nagios server and the client server. You should also keep in mind that if you use sftp to transfer files to a server, you must also enable port 22 and allow TCP traffic.
 
+`step by step on how to enable a port on the ubuntu server firewall:`
+
+`1.ufw status:`
+  
+-This command shows you the current status of the firewall. It provides an overview of which rules are applied and which connections are allowed or blocked.
+
+ `2.ufw enable:`
+
+-This command activates the UFW (Uncomplicated Firewall) if it's not already enabled. UFW is a simplified user interface for managing iptables, the Linux firewall. Enabling UFW doesn't imply that it's already blocking or allowing any traffic; it simply enables the firewall functionality.
+
+ `3.ufw allow 5666:`
+-This command adds a rule to the UFW firewall that allows traffic through port 5666. Nagios, a monitoring system, commonly uses port 5666 for communication between the Nagios server and clients. Allowing traffic on this port is essential for Nagios to work properly. The allow option indicates that the traffic is allowed and 5666 specifies the port, you must take into account enabling port 5666 on the client machine and on the nagios server so that they can communicate correctly
+
+
+- `How to activate port 22 to use SFTP to transfer files?`
 
 5 preguntas y respuestas
 
