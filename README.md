@@ -34,7 +34,7 @@ In this document you can find how to configure a Nagios server to monitor server
 
 | Status            | Description                          |
 | ----------------- | ------------------------------------ |
-| <img src="https://img.shields.io/badge/Study%20Status-Design%20Finalized-brightgreen.svg" alt="Study Status: Design Finalized"> | The study was finished | 
+| <img src="https://img.shields.io/badge/Study%20Status-Design%20Finalized-brightgreen.svg" alt="Study Status: Design Finalized"> | The ongoing study | 
 
 ### Keyworks (Palabras claves)
 
@@ -109,9 +109,23 @@ This command is similar to the previous one but explicitly specifies the TCP pro
 ![allow firewall](https://github.com/VILL74/nagios-server-configuration-guide-for-server-monitoring/assets/87573078/820df265-3c1b-48fd-a29d-704f4446badd)
 
 
--**How do I define a service to monitor?**
+- **How do I define a service to monitor?**
+`1.locate us in the file to define the services to use:`
 
--**How to connect the client server and the nagios server?**
+We must have administrator permissions to avoid problems and we enter the following path /usr/local/nagios/etc/servers using the following command:
+
+`cd /usr/local/nagios/etc/servers`
+
+`2. open configuration file to define nagios services`
+
+once located we give ls to find the file called client.cfg and we use nano client.cfg to be able to edit the file
+
+-`photo of how to apply the commands`
+
+![1 definir servicio e](https://github.com/VILL74/nagios-server-configuration-guide-for-server-monitoring/assets/87573078/615308b3-41aa-44d7-bd35-ef4cd87fa404)
+
+
+- **How to connect the client server and the nagios server?**
 5 preguntas y respuestas
 
 ### Contacts (Contactos)
