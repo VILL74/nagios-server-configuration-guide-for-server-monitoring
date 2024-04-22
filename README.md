@@ -58,6 +58,18 @@ It's important to use Nagios because it provides real-time visibility into the s
 Place text here
 
 ### Acknowledgements (Agradecimientos)
+`Nazareno Anselmi`: 
+- [Nagios - Install NRPE](https://www.youtube.com/watch?v=7qZv50kweys)
+  
+`Tecnolitas`: 
+- [How to install Nagios on Ubuntu](https://tecnolitas.com/blog/como-instalar-nagios-en-ubuntu-20-04/)
+  
+`Damiandiazrios82`:  
+- [Nagios client configuration](https://rincondelsistema.home.blog/2019/03/17/configuracion-clientes-nagios/)
+
+`Pavel Saavedra`:  
+-[Add Host and Services to Nagios monitoring](https://youtu.be/40nUAYv-zQs?si=5dY2NLeJb_zBZGw9)
+
 
 
 
