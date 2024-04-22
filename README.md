@@ -4,7 +4,7 @@
 
 | Author                | Origin                               |
 | --------------------- | ------------------------------------ |
-| Joshua Caffroniq Pacheco       | UniBarranquilla - IUB                |
+| Joshua Caffroni Pacheco       | UniBarranquilla - IUB                |
 | Harry Lopez Garcia           | UniBarranquilla - IUB                |
 
 ### Abstract (Resumen)
