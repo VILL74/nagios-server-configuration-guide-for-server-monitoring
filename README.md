@@ -1,5 +1,4 @@
 # nagios-server-configuration-guide-for-server-monitoring
-=================
 
 ### Authors (Autores)
 
@@ -9,8 +8,7 @@
 | Harry Lopez           | UniBarranquilla - IUB                |
 
 ### Abstract (Resumen)
-
-In the current document we talk about Nagios which is an open source monitoring tool that is used to monitor IT infrastructures, including servers, networks, applications and services, thanks to this it allows system administrators to detect and actively resolve issues before they impact end users.
+In this document we talk about how to configure a Nagios server to monitor servers. Nagios is an open source monitoring tool that is used to monitor IT infrastructures, including servers, networks, applications and services, thanks to this it allows administrators to systems to actively detect and resolve issues before they impact end users.
 
 ### Screenshots (Pantallazos)
 
