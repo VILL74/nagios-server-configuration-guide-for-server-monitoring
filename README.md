@@ -352,7 +352,7 @@ harrydlopez@unibarranquilla.edu.co
 ### Acknowledgements (Agradecimientos)
 
 `HowtoForge - Tutoriales de Linux`:
--[How to install and use SFTP on Linux servers](https://howtoforge.es/como-instalar-y-utilizar-sftp-en-servidores-linux/)
+- [How to install and use SFTP on Linux servers](https://howtoforge.es/como-instalar-y-utilizar-sftp-en-servidores-linux/)
 
 `Nazareno Anselmi`: 
 - [Nagios - Install NRPE](https://www.youtube.com/watch?v=7qZv50kweys)
