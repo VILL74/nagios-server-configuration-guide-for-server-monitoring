@@ -75,7 +75,7 @@ In this document you can find how to configure a Nagios server to monitor server
 Disclaimer: before starting, keep in mind that two instances of Ubuntu Server were used to do this since this research was done for educational purposes.
 
 - `Step 1 (this step must be done in both instances)`
-- 
+
 Activation of ports and firewall: before starting with this you must make sure that port 80 and port 5666 are active, for this you can use the command
 
 `sudo ufw status`
@@ -122,7 +122,7 @@ NAGIOS installation
 
 It's important to use Nagios because it provides real-time visibility into the status of important systems and services, helping to ensure the availability, reliability and optimal performance of the IT infrastructure, thanks to active monitoring of resources and detection of problems. Early on, Nagios helps prevent unplanned outages and helps minimize downtime, thereby improving productivity and user satisfaction.
 
--**In the second instance, a container was created with nginx in Docker**
+- **In the second instance, a container was created with nginx in Docker**
 
 - **step 1 docker installation**
 
@@ -186,7 +186,7 @@ Once this is done, you can verify its operation by entering the IP of your serve
 
 **Step 4 add host and services to NAGIOS monitoring**
 
--[Add Host and Services to Nagios monitoring](https://youtu.be/40nUAYv-zQs?si=5dY2NLeJb_zBZGw9)
+- [Add Host and Services to Nagios monitoring](https://youtu.be/40nUAYv-zQs?si=5dY2NLeJb_zBZGw9)
 
 ### FAQ (Preguntas y respuestas)
 
