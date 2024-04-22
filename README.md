@@ -65,7 +65,7 @@ It's important to use Nagios because it provides real-time visibility into the s
 
 ### FAQ (Preguntas y respuestas)
 
-- `Does a port have to be enabled for the Nagios server to serve?`
+- **Does a port have to be enabled for the Nagios server to serve?**
   
 Yes, port 5666 must be enabled on the Nagios server and the client server. You should also keep in mind that if you use sftp to transfer files to a server, you must also enable port 22 and allow TCP traffic.
 
