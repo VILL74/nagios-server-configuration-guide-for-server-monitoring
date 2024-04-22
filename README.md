@@ -13,9 +13,11 @@ In this document you can find how to configure a Nagios server to monitor server
 ### Screenshots (Pantallazos)
 
 - `Host List`
+  
 ![2](https://github.com/VILL74/nagios-server-configuration-guide-for-server-monitoring/assets/87573078/91bde8bc-c5a9-4bcd-8ede-d46be35ecea1)
 
 - `This panel shows the list of services that are being monitored with their statuses`
+  
 ![1](https://github.com/VILL74/nagios-server-configuration-guide-for-server-monitoring/assets/87573078/aff2aae3-944b-41a6-a766-0e905e62ca58)
 
 
