@@ -51,13 +51,24 @@ In this document you can find how to configure a Nagios server to monitor server
 ### Roadmap (Hoja de ruta)
 
 	 Pre-requisitos (Pre-Requisites)
-	 Instalación (Installation)
+         - Linux: Basic knowledge of Linux command line operations and processes such as editing and creating configuration files and restarting services, Linux shell 
+         scripts as well as its basic commands.
+         - networks: basic knowledge such as IP addresses, ports, network protocols (TCP/IP, UDP) and firewall configuration.
+         - docker: Basic knowledge such as installing and creating containers, killing and stopping processes in containers.
 
+	 Instalación (Installation)
+         - VirtualBox
+         - Linux Ubuntu (Ubuntu server)
+         - Docker
+	 - Nginx + test page
 		Servidor (Server)
-			Item1
-			Item2
-			Item3 - plugins 
+                        - Nagios 
+			- Plugins Nagios
 		Clientes (Client)
+                        - Sftp
+			- Docker
+                        - Nginx + test page
+   
   
 ### How to install nagios
 
@@ -147,14 +158,14 @@ It's important to use Nagios because it provides real-time visibility into the s
 
 To install NGIX we must have something to display and for this we will use a test page loaded into the server through sftp which was configured using the following link
 
--[Nginx server file and test page](https://howtoforge.es/como-instalar-y-utilizar-sftp-en-servidores-linux/)
+- [Nginx server file and test page](https://howtoforge.es/como-instalar-y-utilizar-sftp-en-servidores-linux/)
 
--[How to install and use SFTP on Linux servers](https://howtoforge.es/como-instalar-y-utilizar-sftp-en-servidores-linux/)
+- [How to install and use SFTP on Linux servers](https://howtoforge.es/como-instalar-y-utilizar-sftp-en-servidores-linux/)
 
 Once this is done you can use different tools, in this case I used winscp
--[Install Winscp](https://winscp.net/eng/download.php)
+- [Install Winscp](https://winscp.net/eng/download.php)
 
-**Once this is done you can follow the following steps**
+Once this is done you can follow the following steps
 
 - 1.Locate inside the Docker folder that was loaded by SMTP
 - 2. Go to the nginx folder
@@ -162,9 +173,8 @@ Once this is done you can use different tools, in this case I used winscp
   
 `docker build -t img_dk_nginx .`
 
-4. Run Nginx server in container without a volume
-5. 
-docker run -d -p 4200:80 -v $PWD/plantilla:/usr/share/nginx/html --name container_nginx_4200 img_dk_nginx
+- 4. Run Nginx server in container without a volume
+- 5. docker run -d -p 4200:80 -v $PWD/plantilla:/usr/share/nginx/html --name container_nginx_4200 img_dk_nginx
 
 **Note:** if port 4200 is busy on your server, you only have to change it in the command which is in the part of the command that says “4200:80” you just have to change 4200 to the desired port.
 
