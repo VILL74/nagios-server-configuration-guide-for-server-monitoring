@@ -4,8 +4,8 @@
 
 | Author                | Origin                               |
 | --------------------- | ------------------------------------ |
-| Joshua Caffroni       | UniBarranquilla - IUB                |
-| Harry Lopez           | UniBarranquilla - IUB                |
+| Joshua Caffroni Pacheco       | UniBarranquilla - IUB                |
+| Harry Lopez Garcia           | UniBarranquilla - IUB                |
 
 ### Abstract (Resumen)
 In this document you can find how to configure a Nagios server to monitor servers, Nagios is an open source monitoring tool that is used to monitor IT (Information Technology) infrastructures, including servers, networks, applications and services, thanks to this Allows system administrators to actively detect and resolve problems before they affect end users. A real-world monitoring environment was set up using the Oracle VM VirtualBox application by creating virtual machines to monitor a server.
