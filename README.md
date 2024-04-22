@@ -110,6 +110,7 @@ This command is similar to the previous one but explicitly specifies the TCP pro
 
 
 - **How do I define a service to monitor?**
+
 `1.locate us in the file to define the services to use:`
 
 We must have administrator permissions to avoid problems and we enter the following path /usr/local/nagios/etc/servers using the following command:
@@ -123,6 +124,23 @@ once located we give ls to find the file called client.cfg and we use nano clien
 -`photo of how to apply the commands`
 
 ![1 definir servicio e](https://github.com/VILL74/nagios-server-configuration-guide-for-server-monitoring/assets/87573078/615308b3-41aa-44d7-bd35-ef4cd87fa404)
+
+-`structure of how to define a service`
+
+![2 definir servicio](https://github.com/VILL74/nagios-server-configuration-guide-for-server-monitoring/assets/87573078/b88ed09b-26da-4cb8-865c-759b4b54558e)
+
+![3 definir servicio](https://github.com/VILL74/nagios-server-configuration-guide-for-server-monitoring/assets/87573078/d3bd5be6-9040-4043-9eb0-18c39e492f69)
+
+`3. go and edit commands.cfg file`
+
+- `It must be taken into account that the services that were defined are those that are by default in the commands.cfg file`
+
+To locate ourselves in the commands.cfg file we go to the following path /usr/local/nagios/etc/objects with the command cd, then we give ls and finally nano commands.cfg
+
+-`photo of how to apply the commands`
+![1commands](https://github.com/VILL74/nagios-server-configuration-guide-for-server-monitoring/assets/87573078/430facc2-316d-4286-be08-78c238cd3c20)
+
+![2commands](https://github.com/VILL74/nagios-server-configuration-guide-for-server-monitoring/assets/87573078/6260d109-6222-41b4-b579-d7c28e81ed95)
 
 
 - **How to connect the client server and the nagios server?**
