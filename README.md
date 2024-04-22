@@ -73,17 +73,36 @@ Yes, port 5666 must be enabled on the Nagios server and the client server. You s
 
 `1.ufw status:`
   
--This command shows you the current status of the firewall. It provides an overview of which rules are applied and which connections are allowed or blocked.
+This command shows you the current status of the firewall. It provides an overview of which rules are applied and which connections are allowed or blocked.
 
- `2.ufw enable:`
+`2.ufw enable:`
 
--This command activates the UFW (Uncomplicated Firewall) if it's not already enabled. UFW is a simplified user interface for managing iptables, the Linux firewall. Enabling UFW doesn't imply that it's already blocking or allowing any traffic; it simply enables the firewall functionality.
+This command activates the UFW (Uncomplicated Firewall) if it's not already enabled. UFW is a simplified user interface for managing iptables, the Linux firewall. Enabling UFW doesn't imply that it's already blocking or allowing any traffic; it simply enables the firewall functionality.
 
  `3.ufw allow 5666:`
--This command adds a rule to the UFW firewall that allows traffic through port 5666. Nagios, a monitoring system, commonly uses port 5666 for communication between the Nagios server and clients. Allowing traffic on this port is essential for Nagios to work properly. The allow option indicates that the traffic is allowed and 5666 specifies the port, you must take into account enabling port 5666 on the client machine and on the nagios server so that they can communicate correctly
+ 
+This command adds a rule to the UFW firewall that allows traffic through port 5666. Nagios, a monitoring system, commonly uses port 5666 for communication between the Nagios server and clients. Allowing traffic on this port is essential for Nagios to work properly. The allow option indicates that the traffic is allowed and 5666 specifies the port, you must take into account enabling port 5666 on the client machine and on the nagios server so that they can communicate correctly
 
 
-- `How to activate port 22 to use SFTP to transfer files?`
+- **How to activate port 22 to use SFTP to transfer files?**
+
+`step by step on how to enable port 22 in ubuntu server firewall:`
+
+`1.ufw status:`
+  
+This command shows you the current status of the firewall. It provides an overview of which rules are applied and which connections are allowed or blocked.
+
+`2.ufw enable:`
+
+This command activates the UFW (Uncomplicated Firewall) if it's not already enabled. UFW is a simplified user interface for managing iptables, the Linux firewall. Enabling UFW doesn't imply that it's already blocking or allowing any traffic; it simply enables the firewall functionality.
+
+`3.ufw allow 22:`
+
+This command adds a rule to the UFW firewall that allows traffic through port 22. Port 22 is the default port for SSH (Secure Shell), which is a protocol for securely accessing a remote system. Allowing traffic on this port is useful if you need to access the system remotely via SSH. The allow option indicates that traffic is allowed, and 22 specifies the port.
+
+`4.ufw allow 22/tcp:`
+
+This command is similar to the previous one but explicitly specifies the TCP protocol. Although most applications using port 22 use TCP, this command ensures that only TCP traffic on port 22 is allowed and not any other protocol like UDP. TCP is a reliable, connection-oriented communication protocol commonly used for data transfers requiring delivery assurance, such as SSH.
 
 5 preguntas y respuestas
 
