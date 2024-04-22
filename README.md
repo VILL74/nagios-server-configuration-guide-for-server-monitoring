@@ -104,6 +104,14 @@ This command adds a rule to the UFW firewall that allows traffic through port 22
 
 This command is similar to the previous one but explicitly specifies the TCP protocol. Although most applications using port 22 use TCP, this command ensures that only TCP traffic on port 22 is allowed and not any other protocol like UDP. TCP is a reliable, connection-oriented communication protocol commonly used for data transfers requiring delivery assurance, such as SSH.
 
+- `photo result of activating ports`
+
+![allow firewall](https://github.com/VILL74/nagios-server-configuration-guide-for-server-monitoring/assets/87573078/820df265-3c1b-48fd-a29d-704f4446badd)
+
+
+-**How do I define a service to monitor?**
+
+-**How to connect the client server and the nagios server?**
 5 preguntas y respuestas
 
 ### Contacts (Contactos)
