@@ -54,9 +54,9 @@ It's important to use Nagios because it provides real-time visibility into the s
 5 preguntas y respuestas
 
 ### Contacts (Contactos)
--`Joshua Caffroni`
+- `Joshua Caffroni`
 jcaffroni@unibarranquilla.edu.co
--`Harry Lopez`
+- `Harry Lopez`
 harrydlopez@unibarranquilla.edu.co
 
 ### Acknowledgements (Agradecimientos)
