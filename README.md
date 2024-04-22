@@ -58,10 +58,125 @@ In this document you can find how to configure a Nagios server to monitor server
 			Item2
 			Item3 - plugins 
 		Clientes (Client)
+  
+### How to install nagios
+
+Disclaimer: before starting, keep in mind that two instances of Ubuntu Server were used to do this since this research was done for educational purposes.
+
+- `Step 1 (this step must be done in both instances)`
+- 
+Activation of ports and firewall: before starting with this you must make sure that port 80 and port 5666 are active, for this you can use the command
+
+`sudo ufw status`
+
+The command will show you the status of the firewall, whether activated or deactivated, and the ports that are activated at that moment.
+
+`disabled`
+
+![image](https://github.com/VILL74/nagios-server-configuration-guide-for-server-monitoring/assets/87573078/3c3e9229-1577-4609-9be4-f96e82807d80)
+
+If your firewall is disabled, you can activate it with the command
+
+`sudo uwf enable`
+
+Enabled (no ports)
+
+![image](https://github.com/VILL74/nagios-server-configuration-guide-for-server-monitoring/assets/87573078/cd7943a2-6275-41fe-84cc-a910ff676c40)
+
+For activation of posts you can use the following commands to activate ports 22, 80, 5666
+
+`Sudo ufw allow 22`
+
+`Sudo ufw allow 80`
+
+`Sudo ufw allow 5666`
+
+![image](https://github.com/VILL74/nagios-server-configuration-guide-for-server-monitoring/assets/87573078/946b407a-598f-4a5f-8f8e-7f1d9c5a1594)
+
+- `Step 2`
+
+In the first instance, the installation of NAGIOS and the NRPE agent must be carried out on the server. For both cases, the following links are available.
+
+NAGIOS installation
+
+**Note:** the first two commands in step 1 can sometimes generate an error if you are sure that all package lists are up to date on your server or you are comfortable with a specific version or you just don't want to take the risk, ignore that step and continue from step 2
+
+- [How to install Nagios on Ubuntu](https://tecnolitas.com/blog/como-instalar-nagios-en-ubuntu-20-04/)
+
+**Installation of the NRPE agent on the server**
+
+[Nagios - Install NRPE](https://www.youtube.com/watch?v=7qZv50kweys)
 
 ### Usage (Por qué es importante usarlo)
 
 It's important to use Nagios because it provides real-time visibility into the status of important systems and services, helping to ensure the availability, reliability and optimal performance of the IT infrastructure, thanks to active monitoring of resources and detection of problems. Early on, Nagios helps prevent unplanned outages and helps minimize downtime, thereby improving productivity and user satisfaction.
+
+-**In the second instance, a container was created with nginx in Docker**
+
+- **step 1 docker installation**
+
+1. Login with super user
+   
+`sudo su`
+
+2. Download .sh to install Docker on the operating system
+
+`curl -fsSL https://get.docker.com -o get-docker.sh`
+
+![image](https://github.com/VILL74/nagios-server-configuration-guide-for-server-monitoring/assets/87573078/42ca7dae-9f34-469c-9ba8-23cae81738c2)
+
+3. Install Docker on the operating system
+
+`sh get-docker.sh`	
+
+![image](https://github.com/VILL74/nagios-server-configuration-guide-for-server-monitoring/assets/87573078/fb3676d6-641d-4c76-8855-d1921e45b726)
+
+4. View the installation version
+
+`docker –v`
+
+![image](https://github.com/VILL74/nagios-server-configuration-guide-for-server-monitoring/assets/87573078/18a6e740-1283-4cf8-875f-cee1e345c3e5)
+
+5. Try Hello – World of Docker
+
+`docker run hello-world`
+
+![image](https://github.com/VILL74/nagios-server-configuration-guide-for-server-monitoring/assets/87573078/e67a573d-daa8-4a8c-a057-ad11db8e525e)
+
+- **Step 2 NGIX installation**
+
+To install NGIX we must have something to display and for this we will use a test page loaded into the server through sftp which was configured using the following link
+
+-[Nginx server file and test page](https://howtoforge.es/como-instalar-y-utilizar-sftp-en-servidores-linux/)
+
+-[How to install and use SFTP on Linux servers](https://howtoforge.es/como-instalar-y-utilizar-sftp-en-servidores-linux/)
+
+Once this is done you can use different tools, in this case I used winscp
+-[Install Winscp](https://winscp.net/eng/download.php)
+
+**Once this is done you can follow the following steps**
+
+- 1.Locate inside the Docker folder that was loaded by SMTP
+- 2. Go to the nginx folder
+- 3. Create the image via a DockerFile
+  
+`docker build -t img_dk_nginx .`
+
+4. Run Nginx server in container without a volume
+5. 
+docker run -d -p 4200:80 -v $PWD/plantilla:/usr/share/nginx/html --name container_nginx_4200 img_dk_nginx
+
+**Note:** if port 4200 is busy on your server, you only have to change it in the command which is in the part of the command that says “4200:80” you just have to change 4200 to the desired port.
+
+Once this is done, you can verify its operation by entering the IP of your server followed by port 4200 in your trusted search engine.
+
+**step 3 NRPE agent inhalation**
+
+- [Nagios client configuration](https://rincondelsistema.home.blog/2019/03/17/configuracion-clientes-nagios/)
+
+**Step 4 add host and services to NAGIOS monitoring**
+
+-[Add Host and Services to Nagios monitoring](https://youtu.be/40nUAYv-zQs?si=5dY2NLeJb_zBZGw9)
 
 ### FAQ (Preguntas y respuestas)
 
@@ -225,6 +340,10 @@ jcaffroni@unibarranquilla.edu.co
 harrydlopez@unibarranquilla.edu.co
 
 ### Acknowledgements (Agradecimientos)
+
+`HowtoForge - Tutoriales de Linux`:
+-[How to install and use SFTP on Linux servers](https://howtoforge.es/como-instalar-y-utilizar-sftp-en-servidores-linux/)
+
 `Nazareno Anselmi`: 
 - [Nagios - Install NRPE](https://www.youtube.com/watch?v=7qZv50kweys)
   
