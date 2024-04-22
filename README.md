@@ -34,7 +34,7 @@ In this document you can find how to configure a Nagios server to monitor server
 
 | Status            | Description                          |
 | ----------------- | ------------------------------------ |
-| <img src="https://img.shields.io/badge/Study%20Status-Design%20Finalized-brightgreen.svg" alt="Study Status: Design Finalized"> | The ongoing study | 
+| <img src="https://img.shields.io/badge/Study%20Status-Design%20Finalized-brightgreen.svg" alt="Study Status: Design Finalized"> | The study was finished | 
 
 ### Keyworks (Palabras claves)
 
